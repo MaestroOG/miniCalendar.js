@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #FF451B, #FFFDFF);
+}
+
+.calendar {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.date,
+.m-y {
+    text-align: center;
+    height: 14rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.date {
+    background-color: #FFFDFF;
+}
+
+.date h1 {
+    font-size: 4.2rem;
+}
+
+#day {
+    position: relative;
+    bottom: 26px;
+}
+
+.m-y {
+    background-color: #FF451B;
+    color: #fff;
+}
+
+.m-y h2 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:425px) {
+
+    .date,
+    .m-y {
+        text-align: center;
+        height: 10rem;
+        width: 8rem;
+    }
+
+    .m-y h2 {
+        font-size: 1.2rem;
+    }
+
+    .date h1 {
+        font-size: 3.4rem;
+    }
+}
